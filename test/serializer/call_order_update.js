@@ -1,5 +1,5 @@
 import {ops} from "../../lib/";
-import {Apis} from "bitsharesjs-ws";
+import {Apis} from "gvosjs-ws";
 
 import assert from "assert";
 var trans1 = {

@@ -1,5 +1,5 @@
 import assert from "assert";
-import {Apis, ChainConfig} from "bitsharesjs-ws";
+import {Apis, ChainConfig} from "gvosjs-ws";
 import {ChainStore} from "../../lib";
 // var objs = require("./testObjects.json");
 
@@ -7,7 +7,9 @@ var coreAsset;
 
 describe("ChainStore", () => {
     // Connect once for all tests
+
     before(function() {
+        this.timeout(10000000000);
         /* use wss://bitshares.openledger.info/ws if no local node is available */
         return Apis.instance(
             "wss://bitshares.openledger.info/ws",

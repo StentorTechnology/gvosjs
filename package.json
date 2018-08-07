@@ -1,7 +1,7 @@
 {
-    "name": "bitsharesjs",
+    "name": "gvosjs",
     "version": "1.8.1",
-    "description": "Pure JavaScript Bitshares library for node.js and browsers.",
+    "description": "Pure JavaScript GVOS library for node.js and browsers.",
     "browser": {
         "ws": false,
         "crypto": false
@@ -33,7 +33,7 @@
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/bitshares/bitsharesjs.git"
+        "url": "git+https://github.com/StentorTechnology/gvosjs.git"
     },
     "author": "Sigve Kvalsvik <bitsharesblocks@gmail.com> (https://github.com/svk31)",
     "contributors": [
@@ -52,7 +52,7 @@
     "jsnext:main": "./es/index.js",
     "dependencies": {
         "bigi": "1.4.2",
-        "bitsharesjs-ws": "1.5.4",
+        "gvosjs-ws": "^1.5.7",
         "bs58": "4.0.1",
         "bytebuffer": "5.0.1",
         "create-hash": "1.2.0",

@@ -205,7 +205,7 @@
 <pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">import assert from &quot;assert&quot;;
 import {Signature, PublicKey, hash} from &quot;../../ecc&quot;;
 import {ops} from &quot;../../serializer&quot;;
-import {Apis, ChainConfig} from &quot;bitsharesjs-ws&quot;;
+import {Apis, ChainConfig} from &quot;gvosjs-ws&quot;;
 import ChainTypes from &quot;./ChainTypes&quot;;
 const Buffer = require(&quot;safe-buffer&quot;).Buffer;
 
@@ -238,7 +238,7 @@ class TransactionBuilder {
 
         @arg {ConfidentialWallet} cwallet - must be unlocked, used to gather signing keys
 
-        @arg {array&lt;string&gt;} [signer_pubkeys = null] - Optional [&quot;GPHAbc9Def0...&quot;, ...].  These are additional signing keys.  Some balance claims require propritary address formats, the witness node can&apos;t tell us which ones are needed so they must be passed in.  If the witness node can figure out a signing key (mostly all other transactions), it should not be passed in here.
+        @arg {array&lt;string&gt;} [signer_pubkeys = null] - Optional [&quot;TESTAbc9Def0...&quot;, ...].  These are additional signing keys.  Some balance claims require propritary address formats, the witness node can&apos;t tell us which ones are needed so they must be passed in.  If the witness node can figure out a signing key (mostly all other transactions), it should not be passed in here.
 
         @arg {boolean} [broadcast = false]
     */
